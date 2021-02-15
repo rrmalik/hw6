@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
+</head>
+<body class="bg-gray-800">
+    <div class="text-center pt-8">
+        <span class="font-bold text-xl text-white">Raman's Movie List</span>
+    </div>
+  <div class="movies p-16 md:flex md:flex-wrap">
+    <!-- JavaScript puts stuff here -->
+  </div>
+
+  <!-- Put the Firebase config here -->
+
+  <script src="movies.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use -->
+     <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBAFFVP8Dxd8al_HcYP2sc1doqk8zl6JN4",
+    authDomain: "kiei-raman-hw6.firebaseapp.com",
+    projectId: "kiei-raman-hw6",
+    storageBucket: "kiei-raman-hw6.appspot.com",
+    messagingSenderId: "310680730889",
+    appId: "1:310680730889:web:aef80c7ad963c17d9527d8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</body>
+</html>
