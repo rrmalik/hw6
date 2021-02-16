@@ -58,10 +58,10 @@ let db = firebase.firestore()
     moviesId = movies.id
     poster = movies.poster_path
     title = movies.title
-    renderMovie(moviesId, poster)
+    displayMovie(moviesId, poster)
   }
 
-  async function renderMovie(moviesId, poster) {
+  async function displayMovie(moviesId, poster) {
   document.querySelector('.movies').insertAdjacentHTML('beforeend', `
     <div class="movies-${moviesId} border md:w-48 lg:w-64 p-4 space-y-1">
         <h2 class="text-lg text-white font-bold">${title}</h2>
